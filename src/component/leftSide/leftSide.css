@@ -1,0 +1,16 @@
+
+.leftside{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(87, 8, 133);
+    height: 100%;
+}
+.leftside ul{
+    padding-top: 10px;
+      list-style: none;
+      color: white;
+      
+}
+.leftside ul li{
+    padding: 10px 0px;
+}

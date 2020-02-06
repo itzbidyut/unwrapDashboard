@@ -1,0 +1,18 @@
+
+
+nav{
+    /* border-bottom:1px solid black ; */
+    box-shadow: 2px 2px 15px gray;
+    padding: 0px 40px;
+}
+nav h4{
+ margin-left: 23px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+    float: right;
+}
