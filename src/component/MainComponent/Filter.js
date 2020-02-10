@@ -47,8 +47,8 @@ export default class Filter extends Component {
 
     render() {
         return (
-            <div>
-                  <div className="right">
+            <div className="padding10">
+                    <div className="right">
                          <button className="btn  marginRight10"><ModalFunnal/></button>
                     </div>
                 <div>
@@ -60,7 +60,7 @@ export default class Filter extends Component {
                                 <th>Step</th>
                                 <th>Created</th>
                                 <th>Action</th>
-                        </tr>
+                            </tr>
                         </thead>
                         {
                         this.state.data.map((item)=>

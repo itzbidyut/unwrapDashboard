@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 
-import  './hotAnalytics.css'
+
 import { Table } from 'reactstrap';
 
 import icon from '../../Asset/Icon/icon.svg'
@@ -54,7 +54,7 @@ export default class Heatmap extends Component {
 
     render() {
         return (
-            <div>
+            <div className="padding10">
 
                     <div className="right">
                          <button className="btn  marginRight10"><ModalHeatMap/></button>

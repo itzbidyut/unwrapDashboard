@@ -51,7 +51,7 @@ export default class Form extends Component {
 
     render() {
         return (
-            <div>
+            <div className="padding10">
                  <div>
 
                     <div className="right">

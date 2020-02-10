@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import ModalExample from './ModalBody'
 
-import  './hotAnalytics.css'
 import { Table } from 'reactstrap';
 
 import icon from '../../Asset/Icon/icon.svg'
@@ -14,10 +13,10 @@ export default class HotAnalytics extends Component {
         this.state={
              data : [
                 {
-                SlNo: "01",
-                sideId:"12345",
-                website:"name.com",
-                action:false
+                    SlNo: "01",
+                    sideId:"12345",
+                    website:"name.com",
+                    action:false
                 },
                 {
                     SlNo: "02",
@@ -45,7 +44,7 @@ export default class HotAnalytics extends Component {
 
     render() {
         return (
-            <div>
+            <div className="padding10">
                 <h3 className="hotheading">
                     <span className="reduceSize">Hot Analytics</span>
                     <span className="right" ><ModalExample/></span>
@@ -53,10 +52,10 @@ export default class HotAnalytics extends Component {
                 <Table hover responsive className="margin10">
                     <thead>
                         <tr className="colorPurple">
-                        <th>SL.No.</th>
-                        <th>Site Id</th>
-                        <th>Website</th>
-                        <th>Action</th>
+                            <th>SL.No.</th>
+                            <th>Site Id</th>
+                            <th>Website</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     {

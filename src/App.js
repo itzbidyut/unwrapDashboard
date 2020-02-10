@@ -19,13 +19,13 @@ export default class App extends Component {
       <div>
        <Nav/> 
         
-        <div className="container-fluid main">
+        <div className="container-fluid main pad0">
           <div className="row">
-                <div className="col-lg-2">
+              <div className="col-lg-2">
                   <Leftside/>
               </div>
-              <div className="col-lg-10">
-                <div >
+              <div className="col-lg-10 zero">
+                <div className="">
                    <HotAnalytics/>
                    <Website/>
                    

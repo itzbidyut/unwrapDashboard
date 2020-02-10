@@ -1,23 +1,14 @@
 import React, { Component } from 'react'
 
-import { Button,  } from 'reactstrap';
+
 
 
 export default class Clipboard extends Component {
     render() {
         return (
-            <div>
+            <div className="padding10">
                 <br></br>
-                
-                    <Button className="btn btn-primary right  marginRight10" color="primary" >Add New Site</Button>
-               
-                <br></br>
-                <br></br>
-              
-
-                
-
-
+  
                 <div className="margin10">
                     <h4 className="padding0"><span className="colorBlue">unwrap</span><span> Install Unwrap on your site</span></h4>
                     <p>paste the unwrap code into the head of every you wish to track visitors and collect feedback on, and then verify your installation.</p>
@@ -32,7 +23,7 @@ export default class Clipboard extends Component {
                             </div>                            
                         </div> 
                         
-                        <div className="col-md-3">
+                        <div className="col-md-3 responsiveMarginTop10">
                             <button className="btn btn-warning ">copy Clipboard</button>
                         </div>
                    

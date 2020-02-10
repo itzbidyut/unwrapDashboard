@@ -7,7 +7,6 @@
 }
 .col-lg-2{
   padding: 0px;
- /* background-color: purple; */
 }
 
 .margin10{
@@ -34,13 +33,25 @@
 .btnSection{
   margin-top: 30px;
 }
+.padding10{
+padding: 20px;
+
+}
 .colorPink{
   color: rgb(155, 64, 79);
 }
 .btn-pink{
   background-color: palevioletred;
 }
+table{
+  padding: 0ps 10px;
+}
 
+th{
+  padding: 10px 20px !important;
+  line-height: 2.5;
+  
+}
 .flex1{
   display: flex;
   
@@ -64,33 +75,192 @@
   flex-direction: row;
 }
 
-.flex3 .Flexitem{
-
-  border: 2px solid white;
-  border-radius: 50%;
-  padding: 10px;
-  margin-right:20px;
-}
-
-.flex3 .Flexitem:hover{
-  background-color: white;
-  color:purple;}
 
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 760px) {
   .flex3 .Flexitem{margin: 20px 0px 20px 20px
     
   }
 }
 
-.flex4{
-  display: flex;
 
+
+/* hot analytics */
+
+.hotheading{
+  margin-top: 15px;
+  color:rgb(87, 8, 133);
+  margin-bottom: 30px;
 }
+h3{
+  padding: 0px 20px;
+}  
+
+.btn2{
+  background-color:rgb(216, 212, 212);
+  border-radius: 50%;
+}
+button:focus{
+  outline: none;
+}
+.colorPurple{
+  color:rgb(87, 8, 133);
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+  .reduceSize {
+  font-size: 24px;
+  }
+}
+
+/* website */
+
+.Dflex{
+  display: flex;
+  flex-direction: row;
+}
+
+.item{
+  margin: 0px 15px;
+}
+
+.item h5{
+  padding-top: 5px;
+}
+
+.navbar{
+  padding: 15px 0px !important;
+  background-color:  rgb(87, 8, 133);
+  color: white;
+  margin: 0px -20px ;
+}
+
+.icon:hover{color: rgb(87, 8, 133) ;
+  background-color:white;
+}
+.marginRight10{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* clipboard */
+@media only screen and (max-width: 600px){
+  .responsiveMarginTop10{
+  margin-top: 30px;
+}
+}
+
+.lineHeight2{
+  padding: 15px 0px;
+}
+.flex3 .Flexitem:hover{
+  background-color: white;
+  color:purple;}
+
+
 .width200{
-  width: 220px;
+  font-size: 18px;
+  width: 200px;
   margin: 0px 10px 0px 10px;
   padding-top: 5px;
 }
 
+
+.Flexitem{
+  border: 2px solid white;
+  border-radius: 50%;
+  padding: 15px;
+  margin: 0px 10px; 
+} 
+.flexLink{
+   display: flex;
+}
+.bgpurple{
+  background-color:rgb(87, 8, 133);
+  
+}
+.bgpurple .headingAna{
+  color: white;
+  padding-left: 20px;
+  margin: 0px;
+  line-height: 1.5;
+}
+.padding10{
+  padding: 10px;
+}
+
+.iconPack{
+display: flex;
+
+}
+
+@media only screen and (min-width: 600px){
+  .iconPack{
+    display: flex;
+    
+    }
+}
+
+@media only screen and (max-width: 600px){
+  .iconPack{
+    justify-content: space-around;
+    }
+  .LIST{
+    margin: 10px 0px;
+  }
+}
+
+.IconList{ 
+border: 2px solid white;
+border-radius: 50%;
+padding: 10px;
+margin:0px 10px;
+}
+
+.bgPurple{
+  background-color:rgb(87, 8, 133) ;
+  
+  /* margin: 0px -20px 0px -20px;  */
+  padding: 20px 0px;
+}
+.colorWhite{
+  color: white;
+  margin-left: 20px;
+}
+
+.lineHeight25{
+  margin-top:5px;
+  line-height: 5;
+}
+.zero{
+  margin: 0px;
+  padding: 0px;
+}
+.pad0{
+  margin: 0;
+}
+
+/* Model notes */
+
+.flex11{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.flex11 .flexItem11{
+  padding: 10px 50px;
+  color: aqua;
+  background-color:rgb(219, 92, 113);
+} 
+.flex11 .flexItem11:focus{
+  cursor: pointer;
+}
+
+.react-tabs__tab-list{
+  padding: 0;
+}
+.containerPadding{
+  padding: 0px 30px;
+}
