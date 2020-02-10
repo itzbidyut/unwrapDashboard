@@ -2,11 +2,20 @@ import React, { Component } from 'react'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+import MainHotAnalytics from './component/MainComponent/MainHotAnalytics'
 import Nav from './component/nav/Nav'
 import Leftside from './component/leftSide/Leftside'
-import HotAnalytics from './component/MainComponent/HotAnalytics'
-import Website from './component/MainComponent/Website'
 
+import Dashboard from './component/Dashboard/Dashboard'
+import Campaigns from './component/Campaigns/Campaigns'
+import HotLinks from './component/HotLinks/HotLinks'
 
 
 
@@ -25,12 +34,23 @@ export default class App extends Component {
                   <Leftside/>
               </div>
               <div className="col-lg-10 zero">
-                <div className="">
-                   <HotAnalytics/>
-                   <Website/>
-                   
-                </div>
-                 
+                    
+                      {/* <MainHotAnalytics/> */}
+                      <Switch>
+                        <Route exact path="/">
+                          <Dashboard />
+                        </Route>
+                        <Route  path="/campaings">
+                          <Campaigns />
+                        </Route>
+                        <Route exact path="/Hot-links">
+                          <HotLinks />
+                        </Route>
+                        <Route exact path="/hot-Analytics">
+                          <MainHotAnalytics />
+                        </Route>
+                      </Switch>
+               
               </div>
           </div>
           

@@ -44,35 +44,35 @@ export default class Website extends Component {
                             </Input>
                         </div>
                         <div className="col-sm-12 col-md-6 LIST iconPack">
-                                    <Link to="/">
+                                    <Link to="/hot-Analytics/">
                                         <div className="IconList">                           
                                                 <FontAwesomeIcon classNmae="iconBorder" icon={faClone} />                                                      
                                         </div>
                                     </Link>
                                 
                                 
-                                    <Link to="/fire">
+                                    <Link to="/hot-Analytics/fire">
                                         <div className="IconList">                                    
                                                 <FontAwesomeIcon classNmae="iconBorder" icon={faFire} />                                    
                                         </div>
                                     </Link>
                                 
                                 
-                                    <Link to="/filter">
+                                    <Link to="/hot-Analytics/filter">
                                         <div className="IconList">                            
                                             <FontAwesomeIcon classNmae="iconBorder" icon={faFilter} />                           
                                         </div>
                                     </Link>
                                 
                                 
-                                    <Link to="/video">
+                                    <Link to="/hot-Analytics/video">
                                         <div className="IconList">
                                             <FontAwesomeIcon classNmae="iconBorder" icon={faVideo} />
                                         </div>
                                     </Link>
                                 
                                 
-                                    <Link to="/form">
+                                    <Link to="/hot-Analytics/form">
                                         <div className="IconList">                            
                                             <FontAwesomeIcon classNmae="iconBorder" icon={faStickyNote} />
                                         </div>
@@ -145,18 +145,18 @@ export default class Website extends Component {
  */}
 
             <Switch>
-                    <Route exact path="/">
+                    <Route exact path="/hot-Analytics/">
                         <Clipboard/>
                     </Route>
-                    <Route path="/fire">
+                    <Route path="/hot-Analytics/fire">
                         <br></br>
                         <Heatmap/>
                     </Route>
-                    <Route path="/filter">
+                    <Route path="/hot-Analytics/filter">
                         <br></br>
                          <Filter/> 
                     </Route>
-                    <Route path="/form">
+                    <Route path="/hot-Analytics/form">
                         <br></br>
                          <Form/> 
                     </Route>
