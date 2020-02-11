@@ -267,9 +267,9 @@ margin:0px 10px;
 /* Campaigns */
 
 @media only screen and (max-width: 1280px){
-.lineHeight12{
- line-height: 1.5;
-}
+  .lineHeight12{
+  line-height: 1.5;
+  }
 }
 
 .width300{
@@ -279,4 +279,39 @@ width: 250px;
 .bgcolorwhite{
   background-color: white;
   padding: 15px;
+}
+.margin15{
+  margin: 20px 0px 50px 0px;
+}
+
+/* HotLink com */
+
+.removeP nav{
+  padding: 0px;
+  box-shadow: none;
+}
+.colred{
+  color: brown;
+}
+
+.justifyEnd{
+ float: right;
+}
+
+.lineHeight22{
+  margin: 0;
+  line-height: 1.8;
+}
+
+.btn-right{
+  float: right;
+  margin: 10px 0px 30px 0px;
+
+}
+.btn-right .btn{
+  width: 150px;
+}
+
+.Editurl .btn {
+  padding: 6px 12px;
 }

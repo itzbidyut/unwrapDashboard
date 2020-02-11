@@ -3,10 +3,10 @@ import React, { Component } from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 
 import {
-  BrowserRouter as Router,
+ 
   Switch,
   Route,
-  Link
+ 
 } from "react-router-dom";
 
 import MainHotAnalytics from './component/MainComponent/MainHotAnalytics'
@@ -16,7 +16,7 @@ import Leftside from './component/leftSide/Leftside'
 import Dashboard from './component/Dashboard/Dashboard'
 import Campaigns from './component/Campaigns/Campaigns'
 import HotLinks from './component/HotLinks/HotLinks'
-
+import AddHotLink from './component/HotLinks/AddHotLink'
 
 
 import './App.css'
@@ -35,12 +35,12 @@ export default class App extends Component {
               </div>
               <div className="col-lg-10 zero">
                     
-                      {/* <MainHotAnalytics/> */}
+                     
                       <Switch>
                         <Route exact path="/">
                           <Dashboard />
                         </Route>
-                        <Route  path="/campaings">
+                        <Route exact path="/campaings">
                           <Campaigns />
                         </Route>
                         <Route exact path="/Hot-links">
@@ -49,8 +49,11 @@ export default class App extends Component {
                         <Route exact path="/hot-Analytics">
                           <MainHotAnalytics />
                         </Route>
+                        <Route path="/Hot-links/AddHotLink">
+                            <AddHotLink/>
+                        </Route>
                       </Switch>
-               
+              
               </div>
           </div>
           

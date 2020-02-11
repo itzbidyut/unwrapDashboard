@@ -66,10 +66,14 @@ export default class Campaigns extends Component {
     render() {
         return (
                     <div className="padding10">
-                    <h3 className="left">Campaigns</h3>
-                    <div className="right">
-                         <button className="btn "><ModalCam/></button>
-                    </div>
+
+                               
+                                <div className="flex my-3">
+                                    <h3>Campaigns</h3>
+                                    <div> <ModalCam/></div>
+                                </div>
+
+                   
 
                 <Table hover responsive className="margin10">
                     <thead>

@@ -15,7 +15,7 @@ const ModalCam= (props) => {
 
   return (
     <div>
-      <Button className="btn btn-primary right" color="primary" onClick={toggle}>Add New Campaigns</Button>
+      <Button className="btn btn-primary right" color="danger" onClick={toggle}>Add New Campaigns</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Add New Campaigns</ModalHeader>
         <ModalBody>

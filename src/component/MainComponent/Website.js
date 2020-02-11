@@ -4,7 +4,7 @@ import Clipboard from './Clipboard'
 import Heatmap from './Heatmap'
 import Filter from './Filter'
 import Form from './Form'
-
+import AddHotLink from '../HotLinks/AddHotLink'
 
 import {
     BrowserRouter as Router,
@@ -12,6 +12,7 @@ import {
     Route,
     Link
   } from "react-router-dom";
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFire } from '@fortawesome/free-solid-svg-icons'
@@ -79,86 +80,27 @@ export default class Website extends Component {
                                     </Link>          
                         </div>
                     </div>
-
-
                 </div>
                 
-
-               
-                {/* <div className="container-fluid bgpurple">
-                    <div className="row">
-                        <div className="col-sm-12 col-md-3 lineHeight2 padding10">
-                           
-                                <h5 className="headingAna"> Hot Analytics </h5>                       
-                            
-                        </div>
-                        <div className="col-sm-12 col-md-3 lineHeight2">
-                            <Input type="select" name="select" id="exampleSelect">
-                                <option>site name 1</option>
-                                <option>site name 2</option>
-                                <option>site name 3</option>
-                                <option>site name 4</option>
-                                <option>site name 5</option>
-                            </Input>
-                        </div>
-                        <div className="col-sm-12 col-md-6 ">
-                            <div className="flexLink">
-                                
-                                    <Link to="/">
-                                        <div className="Flexitem">                           
-                                                <FontAwesomeIcon classNmae="iconBorder" icon={faClone} />                                                      
-                                        </div>
-                                    </Link>
-                                
-                                
-                                    <Link to="/fire">
-                                        <div className="Flexitem">                                    
-                                                <FontAwesomeIcon classNmae="iconBorder" icon={faFire} />                                    
-                                        </div>
-                                    </Link>
-                                
-                                
-                                    <Link to="/filter">
-                                        <div className="Flexitem">                            
-                                            <FontAwesomeIcon classNmae="iconBorder" icon={faFilter} />                           
-                                        </div>
-                                    </Link>
-                                
-                                
-                                    <Link to="/video">
-                                        <div className="Flexitem">
-                                            <FontAwesomeIcon classNmae="iconBorder" icon={faVideo} />
-                                        </div>
-                                    </Link>
-                                
-                                
-                                    <Link to="/form">
-                                        <div className="Flexitem">                            
-                                            <FontAwesomeIcon classNmae="iconBorder" icon={faStickyNote} />
-                                        </div>
-                                    </Link>                               
-                            </div>                             
-                        </div>
-                    </div>         
-            </div>
-
- */}
 
             <Switch>
                     <Route exact path="/hot-Analytics/">
                         <Clipboard/>
                     </Route>
-                    <Route path="/hot-Analytics/fire">
+                    <Route exact path="/hot-Analytics/fire">
                         <br></br>
                         <Heatmap/>
                     </Route>
-                    <Route path="/hot-Analytics/filter">
+                    <Route exact path="/hot-Analytics/filter">
                         <br></br>
                          <Filter/> 
                     </Route>
-                    <Route path="/hot-Analytics/form">
+                    <Route exact path="/hot-Analytics/form">
                         <br></br>
                          <Form/> 
+                    </Route>
+                    <Route exact path="/Hot-links/AddHotLink">
+                        <AddHotLink />
                     </Route>
             </Switch>
                 
